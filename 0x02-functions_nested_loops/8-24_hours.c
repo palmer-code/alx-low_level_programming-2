@@ -8,9 +8,8 @@
 
 void jack_bauer(void) 
 {
-    int hour, minute;
-
-    for (hour = 0; hour < 24; hour++) 
+	int hour, minute;
+	for (hour = 0; hour < 24; hour++) 
     {
         for (minute = 0; minute < 60; minute++) 
 	{
@@ -18,13 +17,12 @@ void jack_bauer(void)
             char hour_units = '0' + (hour % 10);
             char minute_tens = '0' + (minute / 10);
             char minute_units = '0' + (minute % 10);
-
-           _putchar(hour_tens);
-           _putchar(hour_units);
-           _putchar(':');
-           _putchar(minute_tens);
-           _putchar(minute_units);
-           _putchar('\n');
+	    	_putchar(hour_tens);
+		_putchar(hour_units);
+		_putchar(':');
+	       	_putchar(minute_tens);
+		_putchar(minute_units);
+		_putchar('\n');
         }
     }
 }
