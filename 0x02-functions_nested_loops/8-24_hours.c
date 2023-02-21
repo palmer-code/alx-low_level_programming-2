@@ -26,4 +26,4 @@ void jack_bauer(void)
         }
     }
 }
-
+:%s/\s\+$//e 
