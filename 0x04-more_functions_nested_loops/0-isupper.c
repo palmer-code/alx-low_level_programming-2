@@ -1,4 +1,5 @@
 include "main.h"
+
 /**
  * _isupper - checks character is uppercase
  * @c: carrier int variable
@@ -7,9 +8,9 @@ include "main.h"
 
 int _isupper(int c)
 {
-	if(c >= 65 && c <= 90)
+	if (c >= 65 && c <= 90)
 	{
-		return (i);
+		return (1);
 	}
 	return (0);
 }
