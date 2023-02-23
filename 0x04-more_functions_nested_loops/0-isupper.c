@@ -1,8 +1,8 @@
-include "main.h"
+#include "main.h"
 
 /**
- * _isupper - checks character is uppercase
- * @c: carrier int variable
+ * _isupper - checks is a character is uppercase
+ * @c: carrier integer variable
  * Return: 1 if true, 0 if false
  */
 
