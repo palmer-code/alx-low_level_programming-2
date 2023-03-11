@@ -1,6 +1,13 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/**
+ * File: Main.h
+ * Author: Isabel
+ * Desc: Header file containing prototypes of all 
+ * functions included in the static library libmy.a
+ */
+
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
