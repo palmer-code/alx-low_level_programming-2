@@ -25,7 +25,7 @@ char *_strdup(char *str)
 	if (new_str == NULL)
 		return (NULL);
 
-	for (int i = 0; i < len; len++)
+	for (i = 0; i < len; len++)
 		new_str[i] = str[i];
 
 	return (new_str);
