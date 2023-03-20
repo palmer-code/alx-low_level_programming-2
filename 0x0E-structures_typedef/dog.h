@@ -7,10 +7,10 @@
  */
 
 /**
- * struct dog - a stucture describing a dog
- * @name: name of dog
- * @age: age of dog
- * @owner: owner of dog
+ * struct dog - A new type describing a dog
+ * @name: The name of dog
+ * @age: The age of dog
+ * @owner: The owner of dog
  */
 
 struct dog
@@ -19,5 +19,7 @@ struct dog
 	float age;
 	char *owner;
 };
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
