@@ -18,7 +18,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
+	
+	int nbytes;
 	nbytes = atoi(argv[1]);
 
 	if (nbytes < 0)
@@ -46,7 +47,7 @@ void print_opcodes(void *addr, int nbytes)
 
 	for (i = 0; i < nbytes; i++)
 	{
-		printf("%02x", *(p + i);
+		printf("%02x", *(p + i));
 	}
 
 	printf("\n");
