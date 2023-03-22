@@ -47,7 +47,7 @@ void print_opcodes(void *addr, int nbytes)
 
 	for (i = 0; i < nbytes; i++)
 	{
-		printf("%02x", *(p + i));
+		printf("%.2x", *p);
 	}
 
 	printf("\n");
