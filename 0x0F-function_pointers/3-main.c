@@ -25,9 +25,15 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 	op_func = get_op_func(argv[2]);
 
+	if (op_func == NULL)
+	{
+		printf("Error\n");
+		return (99);
+	}
+
 	if ((num2 == 0) && (*argv[2] == '/' || *argv[2] == '%'))
 	{
-		printf("Errot\n");
+		printf("Error\n");
 		return (100);
 	}
 
