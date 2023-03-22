@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	if ((num2 == 0) && (*argv[2] == '/' || *argv[2] == '%'))
 	{
 		printf("Error\n");
-		return (100);
+		return (101);
 	}
 
 	printf("%d\n", op_func(num1, num2));
