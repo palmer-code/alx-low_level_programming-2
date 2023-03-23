@@ -16,41 +16,41 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	char c;
-	int i;
+	int i = 0, n;
 	double f;
-	const char *str;
-	const char *fptr;
+	char *s;
 
 	va_start(args, format);
 
-	fptr = format;
-
-	while (fptr && *fptr)
+	while (format && format[i])
 	{
-		if (*fptr == 'c')
+		if (format[i] == 'c')
 		{
 			c = (char)va_arg(args, int);
 			printf("%c", c);
 		}
-		else if (*fptr == 'i')
+		else if (format[i] == 'i')
 		{
-			i = va_arg(args, int);
-			printf("%d", i);
+			n = va_arg(args, int);
+			printf("%d", n);
 		}
-		else if (*fptr == 'f')
+		else if (format[i] == 'f')
 		{
 			f = va_arg(args, double);
 			printf("%f", f);
 		}
-		else if (*fptr == 's')
+		else if (format[i] == 's')
 		{
-			str = va_arg(args, const char*);
-			if (str)
-				printf("%s", str);
-			else
+			s = va_arg(args, char*);
+			if (s == NULL)
 				printf("(nil)");
+			else
+				printf("%s", s);
 		}
-		++fptr;
+		i++;
+
+		if (format[i] != '\0')
+			printf(", ");
 	}
 	printf("\n");
 	va_end(args);
